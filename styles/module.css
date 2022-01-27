@@ -1,0 +1,209 @@
+/* Crownel's UI Theme */
+
+/* 폰트 */
+
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,400italic,500,700,900');
+
+/* 전체 폰트 */
+
+body, button {
+	font-family: 'NanumSquareRound','Noto Sans KR',Signika, sans-serif !important;
+}
+
+/* 팝업창 배경 색깔 */
+
+.window-app .window-content {
+	background: #e8e8ef;
+}
+
+/* 사이드바 배경 색깔 */
+.app {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	box-shadow: 0px 0px 20px 0px rgba(41,50,60,0.8);
+}
+
+/* 나레이터 챗 */
+
+#chat-log .chat-message.message.flexcol.narrator-chat.narrator-narrative{
+	background:#000000 !important;
+}
+
+#chat-log .chat-message.message.flexcol.narrator-chat .message-content{
+    font-family: 'HeirofLightBold',Signika, san-serif;
+	color: white;
+}
+
+#chat-log .chat-message.message.flexcol.narrator-chat .message-sender {
+	background-color: transparent;
+	background: none;
+	padding-top: 0px !important;
+	padding-left: 0px;
+	border-bottom: none;
+	box-shadow: none;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+#chat-log .chat-message.message.flexcol.narrator-chat .message-header {
+	margin-bottom: 0px;
+}
+
+.narrator-content {
+	font-family: 'HeirofLightBold',Signika, san-serif;
+}
+
+
+/* 채팅 본문*/
+
+#chat-log .message {
+    background: #29323c;
+	color: #eee;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding: 3px;
+}
+
+#chat-log .message.whisper {
+    background: #785A68;
+}
+
+#chat-log .message.emote {
+	background: #486959;
+}
+
+#chat-log .message.emote .message-content {
+	color: #eee;
+}
+
+.chat-message .table-draw .table-description, .chat-message .message-header .flavor-text, .chat-message .message-header .whisper-to {
+	color:#ddd;
+}
+
+/* 채팅 형식 꾸미기*/
+
+h2.cell__title {
+	font-weight: bold !important;
+}
+
+.chat-message .message-header .message-sender {
+	border-bottom: 2px solid #757575;
+	text-align: left;
+	margin-bottom: 7px;
+	padding-top: 7px;
+	font-weight: bold;
+	font-style: normal;
+	flex: 3;
+}
+.chat-message .message-header {
+	color:#eee;
+	border-bottom: 2px solid #444;
+	margin-bottom: 7px;
+}
+
+
+/* 삽입 이미지 테두리 삭제 */
+
+img {
+	border: none;
+}
+
+/* 매크로 버튼이 내용 안 가리게*/
+.macro-editor {
+  height: calc(100% - 24px) !important;
+}
+
+/* 왼쪽 컨트롤 위치를 위로 */
+#controls{
+	margin-top: 0px;
+}
+
+/* 카미가카리 탤런트 사용, 대미지 적용 버튼 커스텀*/
+button.use-talent, button.calc-damage, button.apply-damage {
+    background: #1f1f1f;
+    color: #efefef;
+    font-weight: 600;
+}
+
+button.use-talent {
+    background: #3b3b3b;
+}
+
+button.calc-damage {
+    background: #59afff;
+}
+
+button.apply-damage {
+    background: #ff5959;
+}
+
+#chat-controls i.fas {
+	font-size: var(--font-size);
+}
+
+/* 채팅입력창 */
+#chat-form {
+    flex: 0 0 12%;
+}
+#chat-form textarea {
+	background:#485563;
+	color: #fff;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 아이템 및 폴더 목록 크기 조절 */
+li.folder > .folder-header {
+  padding: 3px;
+}
+
+:root{
+	--sidebar-item-height: 32px;
+}
+
+/* 장면 목록 크기 조절 */
+#scenes {
+  --sidebar-scene-height: 64px;
+}
+
+#scenes .scene h3 {
+	font-size: 1.3em;
+}
+
+/* 컴펜디움 목록 크기 조절 */
+.compendium.directory .directory-list .directory-item {
+	line-height: 32px;
+}
+
+#compendium li.compendium-pack {
+  position: relative;
+  padding: 4px 6px;
+  line-height: 16px;
+}
+
+/* ESC 메뉴 조절 */
+#menu {
+	width: 320px;
+}
+
+#menu #menu-items li > i {
+	line-height: 42px;
+}
+
+#menu #menu-items li h4 {
+  font-size: 1.5rem;
+  line-height: 42px;
+}
