@@ -32,6 +32,6 @@ FVTT v9 버전부터 호환가능합니다.
 
 매니페스트 링크 : https://github.com/jbblily/fvtt-ui-theme/releases/latest/download/module.json
 
-다운로드 링크 : https://github.com/jbblily/fvtt-ui-theme/releases/download/1.21/module.zip
+다운로드 링크 : https://github.com/jbblily/fvtt-ui-theme/releases/latest/download/module.zip
 
 
