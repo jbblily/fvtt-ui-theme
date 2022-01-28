@@ -167,7 +167,16 @@ button.apply-damage {
 
 /* 아이템 및 폴더 목록 크기 조절 */
 li.folder > .folder-header {
-  padding: 3px;
+	padding: 3px;
+}
+
+.directory .directory-list .directory-item.document {
+	border-top: 1px solid var(--color-border-dark);
+	border-bottom: 1px solid var(--color-border-light-tertiary);
+}
+
+.directory .directory-list .directory-item:last-child {
+  border-bottom-color: transparent;
 }
 
 :root{
@@ -186,6 +195,13 @@ li.folder > .folder-header {
 /* 컴펜디움 목록 크기 조절 */
 .compendium.directory .directory-list .directory-item {
 	line-height: 32px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid var(--color-border-light-primary);
+	box-shadow: none;
+}
+
+.compendium.directory .directory-list .directory-item:last-child {
+	border-bottom-color: transparent;
 }
 
 #compendium li.compendium-pack {
