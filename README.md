@@ -10,8 +10,8 @@ FVTT v9 버전부터 호환가능합니다.
 
 ## 미리보기
 ![image](https://user-images.githubusercontent.com/18694887/151515013-07965040-8ff1-4339-97ac-eb4f8d2ea20d.png)
+![image](https://user-images.githubusercontent.com/18694887/151588573-e2e4ccf1-aba9-41b5-8183-0d8da23fd509.png)
 ![image](https://user-images.githubusercontent.com/18694887/151515688-012abfa3-9c1f-495f-a489-1041f31aa9c2.png)
-![image](https://user-images.githubusercontent.com/18694887/151516000-70dd16af-e8ea-4a93-af43-3b9f8a45175a.png)
 
 
 ## 기능
