@@ -27,24 +27,24 @@ body, button {
 /* 팝업창 배경 색깔 */
 
 .window-app .window-content {
-	background: #e8e8ef;
+	background: #e8e8ef !important;
 }
 
 /* 사이드바 배경 색깔 */
-.app {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	box-shadow: 0px 0px 20px 0px rgba(41,50,60,0.8);
+.app:not(#controls ol) {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
+	box-shadow: 0px 0px 20px 0px rgba(41,50,60,0.8) !important;
 }
 
 /* 나레이터 챗 */
 
 #chat-log .chat-message.message.flexcol.narrator-chat.narrator-narrative{
-	background:#000000 !important;
+	background:#000 !important;
 }
 
 #chat-log .chat-message.message.flexcol.narrator-chat .message-content{
-    font-family: 'HeirofLightBold',Signika, san-serif;
-	color: white;
+    font-family: 'HeirofLightBold',Signika, san-serif !important;
+	color: white !important;
 }
 
 #chat-log .chat-message.message.flexcol.narrator-chat .message-sender {
@@ -54,8 +54,8 @@ body, button {
 	padding-left: 0px;
 	border-bottom: none;
 	box-shadow: none;
-	margin-left: 0px;
-	margin-bottom: 0px;
+	margin-left: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 #chat-log .chat-message.message.flexcol.narrator-chat .message-header {
@@ -90,27 +90,27 @@ body, button {
 	color: #eee;
 }
 
-.chat-message .table-draw .table-description, .chat-message .message-header .flavor-text, .chat-message .message-header .whisper-to {
-	color:#ddd;
+.chat-message .table-draw .table-description, .chat-message .message-header .flavor-text, .chat-message .message-header .whisper-to, footer.nue {
+	color:#ddd !important;
 }
 
 /* 채팅 형식 꾸미기*/
 
 h2.cell__title {
-	font-weight: bold !important;
+	font-weight: bold;
 }
 
 .chat-message .message-header .message-sender {
 	border-bottom: 2px solid #757575;
 	text-align: left;
-	margin-bottom: 7px;
-	padding-top: 7px;
+	margin-bottom: 7px !important;
+	padding-top: 7px !important;
 	font-weight: bold;
 	font-style: normal;
 	flex: 3;
 }
 .chat-message .message-header {
-	color:#eee;
+	color:#eee !important;
 	border-bottom: 2px solid #444;
 	margin-bottom: 7px;
 }
@@ -157,69 +157,69 @@ button.apply-damage {
 
 /* 채팅입력창 */
 #chat-form {
-    flex: 0 0 12%;
+    flex: 0 0 12% !important;
 }
 #chat-form textarea {
-	background:#485563;
+	background:#485563 !important;
 	color: #fff;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 /* 아이템 및 폴더 목록 크기 조절 */
 li.folder > .folder-header {
-	padding: 3px;
+	padding: 3px !important;
 }
 
 .directory .directory-list .directory-item.document {
-	border-top: 1px solid var(--color-border-dark);
-	border-bottom: 1px solid var(--color-border-light-tertiary);
+	border-top: 1px solid var(--color-border-dark) !important;
+	border-bottom: 1px solid var(--color-border-light-tertiary) !important;
 }
 
 .directory .directory-list .directory-item:last-child {
-  border-bottom-color: transparent;
+  border-bottom-color: transparent !important;
 }
 
 :root{
-	--sidebar-item-height: 32px;
+	--sidebar-item-height: 32px !important;
 }
 
 /* 장면 목록 크기 조절 */
 #scenes {
-  --sidebar-scene-height: 64px;
+  --sidebar-scene-height: 64px !important;
 }
 
 #scenes .scene h3 {
-	font-size: 1.3em;
+	font-size: 1.3em !important;
 }
 
 /* 컴펜디움 목록 크기 조절 */
 .compendium.directory .directory-list .directory-item {
-	line-height: 32px;
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid var(--color-border-light-primary);
-	box-shadow: none;
+	line-height: 32px !important;
+	border-top: 1px solid transparent !important;
+	border-bottom: 1px solid var(--color-border-light-primary) !important;
+	box-shadow: none !important;
 }
 
 .compendium.directory .directory-list .directory-item:last-child {
-	border-bottom-color: transparent;
+	border-bottom-color: transparent !important;
 }
 
 #compendium li.compendium-pack {
   position: relative;
-  padding: 4px 6px;
-  line-height: 16px;
+  padding: 4px 6px !important;
+  line-height: 16px !important;
 }
 
 /* ESC 메뉴 조절 */
 #menu {
-	width: 320px;
+	width: 320px !important;
 }
 
 #menu #menu-items li > i {
-	line-height: 42px;
+	line-height: 42px !important;
 }
 
 #menu #menu-items li h4 {
-  font-size: 1.5rem;
-  line-height: 42px;
+  font-size: 1.5rem !important;
+  line-height: 42px !important;
 }
