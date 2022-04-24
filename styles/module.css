@@ -16,8 +16,6 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,400italic,500,700,900');
-
 /* 전체 폰트 */
 
 body, button {
@@ -31,7 +29,7 @@ body, button {
 }
 
 /* 사이드바 배경 색깔 */
-.app:not(#controls ol) {
+.app:not(#controls ol, #navigation) {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
 	box-shadow: 0px 0px 20px 0px rgba(41,50,60,0.8) !important;
 }
