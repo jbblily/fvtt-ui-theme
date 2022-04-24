@@ -6,7 +6,7 @@
   "library": "false",
   "manifestPlusVersion": "1.0.0",
   "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9.242",
+  "compatibleCoreVersion": "9.269",
   "authors": [
     {
       "name": "Crownel",
