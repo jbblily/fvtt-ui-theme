@@ -10,16 +10,36 @@
 }
 
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-/* 전체 폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-body, button {
-	font-family: 'NanumSquareRound','Noto Sans KR',Signika, sans-serif !important;
+/* 대치값 */
+:root{
+	--sidebar-item-height: 32px !important;
+	--glassy: 0px 0px 2px rgba(255, 255, 255, 0.4) inset, 
+    0px 0px 6px rgba(255, 255, 255, 0.2) inset, 
+     1px  1px 1px rgba(0, 0, 0, 1), 
+     1px -1px 1px rgba(0, 0, 0, 1), 
+    -1px -1px 1px rgba(0, 0, 0, 1), 
+    -1px  1px 1px rgba(0, 0, 0, 1), 
+    0px 0px 3px rgba(0, 0, 0, 1), 
+    0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 전체 폰트 적용 */
+
+body, button, select, textarea {
+	font-family: 'Pretendard-Regular',Signika, sans-serif !important;
 }
 
 /* 팝업창 배경 색깔 */
@@ -157,13 +177,54 @@ button.apply-damage {
 #chat-form {
     flex: 0 0 12% !important;
 }
+
 #chat-form textarea {
 	background:#485563 !important;
 	color: #fff;
-	font-family: 'Noto Sans KR', sans-serif !important;
+	border-radius: 0;
+	border: none;
 }
 
-/* 아이템 및 폴더 목록 크기 조절 */
+textarea:focus {
+	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4) inset, 
+    0px 0px 10px rgba(255, 255, 255, 0.2) inset !important;
+}
+
+/* Theatre Inserts 설정창 축소 */
+.theatre-control-group {
+	flex: 0 0 36px !important;
+	height: 36px !important;
+}
+
+.theatre-control-nav-bar-item {
+	flex: 0 0 32px !important;
+	width: 32px !important;
+	height: 32px !important;
+}
+
+/* Theatre Inserts - 채팅 컨트롤 버튼 축소 */
+
+#chat-controls {
+	justify-content: right;
+	margin: 6px !important;
+	overflow: unset;
+}
+
+#chat-controls .roll-type-select {
+	margin: 0 0 0 6px !important;
+}
+
+#chat-controls i.fas {
+	font-size: 12px !important;
+	width: 12px !important;
+	height: 12px;
+}
+
+#chat-controls .control-buttons {
+	flex-basis: fit-content !important;
+}
+
+/* 아이템 및 폴더 목록 크기 및 스타일 조절 */
 li.folder > .folder-header {
 	padding: 3px !important;
 }
@@ -174,20 +235,20 @@ li.folder > .folder-header {
 }
 
 .directory .directory-list .directory-item:last-child {
-  border-bottom-color: transparent !important;
+  border-bottom: none !important;
 }
 
-:root{
-	--sidebar-item-height: 32px !important;
-}
-
-/* 장면 목록 크기 조절 */
+/* 장면 목록 크기 및 스타일 조절 */
 #scenes {
   --sidebar-scene-height: 64px !important;
 }
 
 #scenes .scene h3 {
 	font-size: 1.3em !important;
+}
+
+#scenes .scene {
+    border: 2px solid var(--color-border-dark-1) !important;
 }
 
 /* 컴펜디움 목록 크기 조절 */
@@ -220,4 +281,111 @@ li.folder > .folder-header {
 #menu #menu-items li h4 {
   font-size: 1.5rem !important;
   line-height: 42px !important;
+}
+
+/* 재생목록 스타일 변경 */
+
+#playlists .playlist {
+	background: #29323c;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+}
+
+#playlists li.sound:hover {
+	box-shadow: var(--glassy);
+}
+
+#playlists .playlist .playlist-header, #playlists .global-control .playlist-header h4 {
+	text-decoration: none !important;
+}
+
+#playlists .playlist-sounds:not(#playlists .global-control .playlist-sounds) {
+	border-top: 2px solid #757575;
+	color: #ddd;
+}
+
+/* 설정 버튼 정렬 - Tidy Game Setting UI 비활성화 필요 */
+
+#settings {
+	padding: 0 1rem 1rem 1rem !important;
+	overflow-y: auto;
+  }
+  
+  #settings button {
+	padding: .25rem .5rem !important;
+	margin: 0 0 .125rem 0 !important;
+	cursor: pointer;
+  }
+  
+  #settings button[data-action="world"], #settings button[data-action="logout"] {
+	margin-top: 1rem !important;
+  }
+
+/* Token Action HUD - Dorako UI 참조함 */
+#token-action-hud {
+	gap: 0.01rem !important;
+}
+
+.tah-title-button {
+	background: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
+	box-shadow: 0px 0px 10px 0px rgba(41,50,60,0.8);
+	border: none !important;
+	border-radius: 0;
+	padding: 0 5px 0 5px !important;
+}
+
+.tah-content {
+    gap: 0px;
+    padding: 10px !important;
+    margin: -5px;
+}
+
+.tah-actions {
+    grid-column: 2;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 1000px;
+    row-gap: 3px;
+    column-gap: 3px;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+
+.tah-action {
+	padding: 0 !important;
+	margin: 0.1rem !important;
+}
+
+.tah-action button {
+    border: none !important;
+    border-radius: 0;
+	background-color: #000 !important;
+    line-height: unset;
+    margin-left: unset;
+    padding-left: 7px;
+    padding-right: 7px;
+    min-width: 25px;
+    height:25px;
+}
+
+.tah-action.active,
+.tah-action.active button[value*="toggle"]{
+    background-color: hsl(234, 64%, 35%) !important;
+}
+
+.tah-title-button:hover,
+.tah-action button:hover {
+    transition: backdrop-filter 0.15s ease-out;
+    transition: background-color 0.15s ease-out;
+    background-color: #785A68 !important;
+    border: none !important;
+	box-shadow: var(--glassy) !important;
+}
+
+.tah-action button[value^="toggle"]:hover {
+    transition: backdrop-filter 0.15s ease-out;
+    transition: background-color 0.15s ease-out;
+    background-color: hsl(234, 64%, 25%) !important;
+    border: none !important;
+    box-shadow: var(--glassy)  !important;
 }
