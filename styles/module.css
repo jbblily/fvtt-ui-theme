@@ -294,7 +294,7 @@ li.folder > .folder-header {
 	box-shadow: var(--glassy);
 }
 
-#playlists #global-volume li.sound, #playlists li.sound.flexrow.playing:hover {
+#playlists #global-volume li.sound, #playlists #currently-playing li.sound.flexrow.playing:hover {
     box-shadow: none;
 }
 
