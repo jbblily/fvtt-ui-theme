@@ -206,7 +206,7 @@ textarea:focus {
 
 #chat-controls {
 	justify-content: right;
-	margin: 6px !important;
+	margin: 0 6px 0 6px !important;
 	overflow: unset;
 }
 
