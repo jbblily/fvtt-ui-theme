@@ -147,7 +147,7 @@ img {
 
 /* 왼쪽 컨트롤 위치를 위로 */
 #controls{
-	margin-top: 0px;
+	margin-top: 0px !important;
 }
 
 /* 카미가카리 탤런트 사용, 대미지 적용 버튼 커스텀*/
