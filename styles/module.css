@@ -10,13 +10,6 @@
 }
 
 @font-face {
-    font-family: 'LAB디지털';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
@@ -108,7 +101,7 @@ body, button, select, textarea {
 	color: #eee;
 }
 
-.chat-message .table-draw .table-description, .chat-message .message-header .flavor-text, .chat-message .message-header .whisper-to, footer.nue, .dnd5e.chat-card .card-header h3 {
+.chat-message .table-draw .table-description, .chat-message .message-header .flavor-text, .chat-message .message-header .whisper-to, footer.nue, .dnd5e.chat-card .card-header h3, .dnd5e.chat-card .card-buttons button {
 	color:#ddd !important;
 }
 
@@ -129,8 +122,6 @@ h2.cell__title {
 }
 .chat-message .message-header {
 	color:#eee !important;
-	border-bottom: 2px solid #444;
-	margin-bottom: 7px;
 }
 
 
@@ -202,7 +193,7 @@ textarea:focus {
 	height: 32px !important;
 }
 
-/* Theatre Inserts - 채팅 컨트롤 버튼 축소 */
+/* 채팅 컨트롤 버튼 수정 */
 
 #chat-controls {
 	justify-content: right;
@@ -211,17 +202,37 @@ textarea:focus {
 }
 
 #chat-controls .roll-type-select {
-	margin-right: 0 !important;
+	margin-right: 0px !important;
 }
 
 #chat-controls i.fas {
-	font-size: 12px !important;
-	width: 12px !important;
-	height: 12px;
+	font-size: 0.7rem !important;
+	color: white;
 }
 
-#chat-controls .control-buttons {
-	flex-basis: fit-content !important;
+/* DF chat enhancements - 굴림 버튼 수정 */
+
+#dfcp-rt-buttons {
+	background-color: #202327;
+	border-radius: 5px;
+	margin: 0 7px !important;
+}
+#dfcp-rt-buttons button {
+	background-color: transparent;
+	border: none;
+	font-size: 0.1rem !important;
+	padding: 0 !important;
+	min-height: 0 !important;
+	max-height: 100% !important;
+}
+
+#dfcp-rt-buttons button.button.chat-archive {
+	display: none;
+}
+
+#dfcp-rt-buttons button i {
+    height: auto;
+    width: auto;
 }
 
 /* 아이템 및 폴더 목록 크기 및 스타일 조절 */
