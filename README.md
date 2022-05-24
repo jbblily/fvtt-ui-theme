@@ -9,10 +9,11 @@ FVTT v9 버전부터 호환가능합니다.
 
 
 ## 미리보기
-![image](https://user-images.githubusercontent.com/18694887/168459268-546c40ea-b0ce-42d4-976d-294e3e5a1b1e.png)
-![image](https://user-images.githubusercontent.com/18694887/151588573-e2e4ccf1-aba9-41b5-8183-0d8da23fd509.png)
-![image](https://user-images.githubusercontent.com/18694887/151515688-012abfa3-9c1f-495f-a489-1041f31aa9c2.png)
+![image](https://user-images.githubusercontent.com/18694887/170029048-4e6cd03f-4a16-473c-b2c5-60caff7a208a.png)
+![image](https://user-images.githubusercontent.com/18694887/170029276-766bc6fd-d636-4d78-bae0-92b8420334fb.png)
 ![image](https://user-images.githubusercontent.com/18694887/168459229-9531db5c-f554-405a-976f-d9583a8a52f7.png)
+![image](https://user-images.githubusercontent.com/18694887/170028456-68e10dca-7d6f-4c89-883e-2137247ecaf0.png)
+![image](https://user-images.githubusercontent.com/18694887/170029451-a0e23d0d-8876-4a2f-a03f-327ab9c99257.png)
 
 
 
