@@ -41,6 +41,10 @@ body, button, select, textarea {
 	background: #e8e8ef !important;
 }
 
+.app.sidebar-popout .window-content {
+	background: none !important;
+}
+
 /* 사이드바 배경 색깔 */
 .app:not(#controls ol, #navigation) {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
