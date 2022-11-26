@@ -2,6 +2,8 @@
 
 /* 폰트 */
 
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
 @font-face {
     font-family: 'HeirofLightBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
@@ -32,7 +34,7 @@
 /* 전체 폰트 적용 */
 
 body, button, select, textarea {
-	font-family: 'Pretendard-Regular',Signika, sans-serif !important;
+	font-family: 'Pretendard-Regular', 'Sawarabi Gothic', Signika, sans-serif !important;
 }
 
 /* 팝업창 배경 색깔 */
@@ -98,7 +100,7 @@ body, button, select, textarea {
 }
 
 .chat-message .message-content:not(.message.emote .message-content) {
-	margin-left: 2.2rem;
+	margin-left: 2.5rem;
 }
 
 #chat-log .message.whisper {
@@ -123,8 +125,8 @@ h2.cell__title {
 
 .chat-message .message-header .message-sender {
 	text-align: left;
-	padding-top: 0.4rem !important;
 	font-weight: bold;
+	font-size: var(--font-size-16);
 	flex: 3;
 }
 .chat-message .message-header {
@@ -133,6 +135,10 @@ h2.cell__title {
 
 .message .message-header .message-metadata {
 	opacity: 0.5;
+}
+
+h4 {
+	margin: 0 0 0.1rem !important;
 }
 
 /*채팅로그 - 인라인 박스 글씨 검정색으로*/
@@ -359,6 +365,16 @@ li.folder > .folder-header {
 #playlists .playlist-sounds:not(#playlists .global-control .playlist-sounds) {
 	border-top: 2px solid #757575;
 	color: #ddd;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+#playlists .sound-name {
+	flex: 1.2;
+}
+
+#playlists .playlist .playlist-header .playlist-name {
+	font-weight: bold;
 }
 
 /* 설정 버튼 정렬 - Tidy Game Setting UI 비활성화 필요 */
@@ -451,9 +467,4 @@ li.folder > .folder-header {
 /* Chat portrait 와 DF Chat Enhancements 챗 병합 충돌 개선 */
 .chat-message.message.flexcol.dfce-cm-middle .message-header, .chat-message.message.flexcol.dfce-cm-bottom .message-header {
 	display:none;
-}
-
-/* Module management + 모듈 오류 개선 */
-#client-settings.window-app section.content .settings-list {
-    max-height: calc(100vh - 150px) !important;
 }
