@@ -31,7 +31,7 @@ FVTT v9 버전부터 호환가능합니다.
 
 저와 비슷한 환경에서 적용하고 싶으면 다음과 같은 모듈을 활용하기를 권장합니다.
 
-- Tabbed Chatlog (* 주의 : 포트레이트 크기 30px x 30px 에 최적화되어 있습니다.)
+- Tabbed Chatlog
 - Narrator chat
 - Minimal Ui
 - DF Chat Enhancements
