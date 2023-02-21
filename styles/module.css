@@ -39,7 +39,7 @@ body, button, select, textarea {
 
 /* 팝업창 배경 색깔 */
 
-.window-app .window-content {
+.sheet.journal-entry .journal-entry-content {
 	background: #e8e8ef !important;
 }
 
