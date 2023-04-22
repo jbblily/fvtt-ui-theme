@@ -39,12 +39,8 @@ body, button, select, textarea {
 
 /* 팝업창 배경 색깔 */
 
-.sheet.journal-entry .journal-entry-content {
+.window-app .window-content {
 	background: #e8e8ef !important;
-}
-
-.app.sidebar-popout .window-content {
-	background: none !important;
 }
 
 /* 사이드바 배경 색깔 */
@@ -137,8 +133,8 @@ h2.cell__title {
 	opacity: 0.5;
 }
 
-h4 {
-	margin: 0 0 0.1rem !important;
+h4.chat-portrait-flexrow {
+	margin: 0;
 }
 
 /*채팅로그 - 인라인 박스 글씨 검정색으로*/
