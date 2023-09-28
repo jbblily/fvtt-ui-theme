@@ -39,7 +39,7 @@ body, button, select, textarea {
 
 /* 팝업창 배경 색깔 */
 
-.window-app .window-content {
+.window-content:not(.sheet.journal-entry .window-content, .app.sidebar-popout .window-content) {
 	background: #e8e8ef !important;
 }
 
@@ -197,13 +197,13 @@ button.apply-damage {
 
 /* 채팅입력창 */
 #chat-form {
-    flex: 0 0 12% !important;
+    flex: 0 0 10% !important;
 }
 
 #chat-form textarea {
 	background:#485563 !important;
 	color: #fff;
-	border-radius: 0;
+	border-radius: 5px;
 	border: none;
 }
 
@@ -463,4 +463,24 @@ li.folder > .folder-header {
 /* Chat portrait 와 DF Chat Enhancements 챗 병합 충돌 개선 */
 .chat-message.message.flexcol.dfce-cm-middle .message-header, .chat-message.message.flexcol.dfce-cm-bottom .message-header {
 	display:none;
+}
+
+/* Speaking As 모듈 크기 변경 */
+.speaking-as--currentSpeaker--text, .speaking-as--currentSpeaker--button, .speaking-as--currentSpeaker--locked {
+	font-size: var(--font-size-14) !important;
+	line-height: 24px !important;
+}
+
+.speaking-as--currentSpeaker--text {
+	bottom: 0.6em !important;
+}
+
+.speaking-as--currentSpeaker {
+	margin: 0 10px 12px 10px !important;
+	padding: 5px 0 0 0 !important;
+	height: 24px !important;
+}
+
+.speaking-as--currentSpeaker #context-menu.expand-down {
+	top: calc(100% + 10px) !important;
 }
